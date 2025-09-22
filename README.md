@@ -1,4 +1,4 @@
-### The workflow of the GTMALDA 
+### The workflow of the MSFD
 <img width="3816" height="4812" alt="MDA (1)" src="https://github.com/user-attachments/assets/92cd91d9-0d30-4ce2-b0cf-db741f600de4" />
 
 ### Requirements

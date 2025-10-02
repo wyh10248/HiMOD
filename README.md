@@ -1,7 +1,7 @@
-### The workflow of the MSFD
-<img width="3816" height="4812" alt="MDA (1)" src="https://github.com/user-attachments/assets/92cd91d9-0d30-4ce2-b0cf-db741f600de4" />
+### The workflow of the hiMOD
+<img width="3804" height="4638" alt="MDA" src="https://github.com/user-attachments/assets/a649670f-80fb-4529-b4b4-602a847e31ed" />
 
-### Requirements
+
 torch 2.0.1
 
 scipy 1.11.2

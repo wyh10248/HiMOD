@@ -1,5 +1,6 @@
 ### The workflow of the HiMOD
-<img width="3804" height="4638" alt="MDA" src="https://github.com/user-attachments/assets/a649670f-80fb-4529-b4b4-602a847e31ed" />
+[1.pdf](https://github.com/user-attachments/files/22883961/1.pdf)
+
 
 
 torch 2.0.1

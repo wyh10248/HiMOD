@@ -1,5 +1,6 @@
 ### The workflow of the HiMOD
-[1.pdf](https://github.com/user-attachments/files/22883961/1.pdf)
+<img width="3570" height="3858" alt="1" src="https://github.com/user-attachments/assets/f3e07203-f84c-407b-a192-0e97574940ed" />
+
 
 
 

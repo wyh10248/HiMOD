@@ -6,7 +6,7 @@ def gsl(ldg_file):
     计算 lncRNA 的高斯相似性矩阵。
 
     参数:
-    ldg_file (str): 包含 lncRNA-疾病关联矩阵的文件路径，文件应是一个二维矩阵。
+    ldg_file (str): 包含 lncRNA-disease关联矩阵的文件路径，文件应是一个二维矩阵。
 
     返回:
     lncrna_gs_sim (np.ndarray): 计算得到的 lncRNA 高斯相似性矩阵。
@@ -41,3 +41,4 @@ if __name__ == "__main__":
     result = gsl(ldg_file)
     df = pd.DataFrame(result)
     df.to_csv('D:/Desktop文件/MDA/dataset/aBiofilm/GSM.csv', index=False, header=False)
+

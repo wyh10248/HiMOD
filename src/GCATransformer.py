@@ -46,13 +46,7 @@ class GlobalContextAttention(nn.Module):
 class GraphTransformerLayer(nn.Module):
     def __init__(self, in_dim, hidden_dim, fout_dim, dropout,
                  layer_norm=False, batch_norm=True, residual=True, use_bias=False):
-        """
-        in_dim: 输入维度
-        hidden_dim: 注意力输出的隐藏维度
-        fout_dim: 最终输出维度
-        num_heads: （此处不再使用多头，但保留接口兼容）
-        dropout: dropout 概率
-        """
+       
         super().__init__()
         self.in_dim = in_dim
         self.hidden_dim = hidden_dim
@@ -184,6 +178,7 @@ if __name__== '__main__':
                           True)
     S = model(x)
     print(S.shape)
+
 
 
 

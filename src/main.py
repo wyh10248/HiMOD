@@ -157,15 +157,7 @@ def main(args):
     
 #-------------------------
     result, score, microbe_len, dis_len, tprs, fprs, aucs, precisions, recalls, auprs = cross_validation_experiment(A, DSM, MSM, args)
-    #final_score = np.zeros_like(A, dtype=np.float32)
-    #for fold_score in score:
-    #    final_score += fold_score
-    # 转换为 DataFrame（行列与原始矩阵一致）
-    #df = pd.DataFrame(final_score)
     
-    # 保存为 CSV 文件（不保存索引和列名）
-    #output_filename = f"{dataset}_prediction_score.csv"
-    #df.to_csv(output_filename, index=False, header=False)
     sizes = Sizes(microbe_len, dis_len)
     score_matrix = np.mean(score, axis=0)
     print(list(sizes.__dict__.values()) + result.tolist()[0][:2])

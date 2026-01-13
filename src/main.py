@@ -78,7 +78,7 @@ def cross_validation_experiment(A, microSimi, disSimi, args):
         microbe_len = A.shape[0]
         dis_len = A.shape[1]
         
-        train_matrix = torch.from_numpy(train_matrix).to(torch.float32)
+        #train_matrix = torch.from_numpy(train_matrix).to(torch.float32)
         x = torch.from_numpy(x).to(torch.float32)
         edge_index = edge_index.to(torch.int64)
         edge_attr = edge_attr.to(torch.float32)
@@ -100,7 +100,7 @@ def cross_validation_experiment(A, microSimi, disSimi, args):
          # 模型评估
         model.eval()
         with torch.no_grad():
-            pred_scores, _ = model(args, x, A, edge_attr, edge_index, train_model=False)
+            pred_scores, _ = model(args, x, train_matrix, edge_attr, edge_index, train_model=False)
 
         micro_dis_res= pred_scores.detach().cpu()
         predict_y_proba = micro_dis_res.reshape(microbe_len, dis_len).detach().numpy()
